@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fashion Boutique - Home</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="category.css">
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <!-- LEFT NAV -->
+    <div class="nav-left">
+      <a href="index.html" class="nav-link active">Home</a>
+
+      <!-- CATEGORY DROPDOWN -->
+      <div class="dropdown">
+        <input type="checkbox" id="toggle-cat-home" />
+        <label for="toggle-cat-home" class="dropbtn">Category ▾</label>
+        <div class="dropdown-content">
+          <a href="suit.html">Suit</a>
+          <a href="lehnga.html">Lehenga</a>
+          <a href="saree.html">Saree</a>
+          <a href="anarkali.html">Anarkali</a>
+          <a href="gharara.html">Gharara</a>
+        </div>
+      </div>
+
+      <a href="about.html" class="nav-link">About Us</a>
+    </div>
+
+    <!-- LOGO CENTER -->
+    <div class="logo">
+      <a href="index.html">
+        <img src="logopic.jpg" alt="Heritage Couture Logo" class="logo-img" />
+      </a>
+    </div>
+
+    <!-- RIGHT NAV -->
+    <div class="nav-right">
+      <!-- PROFILE DROPDOWN -->
+      <div class="profile">
+        <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" alt="Profile" class="icon-img" />
+        <div class="dropdown">
+          <a href="login.html" class="dropdown-item">Login</a>
+          <a href="signup.html" class="dropdown-item">Sign Up</a>
+        </div>
+      </div>
+
+      <!-- SEARCH ICON -->
+      <input type="checkbox" id="toggle-search" />
+      <label for="toggle-search" class="nav-icon">
+        <img src="https://cdn-icons-png.flaticon.com/512/54/54481.png" alt="Search" class="icon-img" />
+      </label>
+
+      <!-- SEARCH BAR -->
+      <div class="top-search-bar">
+        <label for="toggle-search" class="close-btn">&times;</label>
+        <form action="search.html" method="GET" class="search-box">
+          <input type="text" name="q" placeholder="Search products..." required>
+          <button type="submit">Search</button>
+        </form>
+      </div>
+
+      <!-- CART ICON -->
+      <label for="cart-toggle" class="nav-icon">
+        <img src="https://cdn-icons-png.flaticon.com/512/3144/3144456.png" alt="Cart" class="icon-img" />
+      </label>
+    </div>
+  </nav>
+
+  <!-- SLIDESHOW -->
+  <div class="slideshow-container">
+    <input type="radio" name="radio-btn" id="img1" checked>
+    <input type="radio" name="radio-btn" id="img2">
+    <input type="radio" name="radio-btn" id="img3">
+    <input type="radio" name="radio-btn" id="img4">
+    <input type="radio" name="radio-btn" id="img5">
+    <input type="radio" name="radio-btn" id="img6">
+
+    <!-- Navigation dots -->
+    <div class="dots-container">
+      <label for="img1" class="dot"></label>
+      <label for="img2" class="dot"></label>
+      <label for="img3" class="dot"></label>
+      <label for="img4" class="dot"></label>
+      <label for="img5" class="dot"></label>
+      <label for="img6" class="dot"></label>
+    </div>
+
+    <!-- Slides -->
+    <div class="slide first">
+      <div class="bg" style="background-image:url('photo1.jpg')"></div>
+      <img src="photo1.jpg" alt="Slide 1">
+    </div>
+    <div class="slide">
+      <div class="bg" style="background-image:url('photo2.jpg')"></div>
+      <img src="photo2.jpg" alt="Slide 2">
+    </div>
+    <div class="slide">
+      <div class="bg" style="background-image:url('photo3.jpg')"></div>
+      <img src="photo3.jpg" alt="Slide 3">
+    </div>
+    <div class="slide">
+      <div class="bg" style="background-image:url('photo4.jpg')"></div>
+      <img src="photo4.jpg" alt="Slide 4">
+    </div>
+    <div class="slide">
+      <div class="bg" style="background-image:url('photo5.jpg')"></div>
+      <img src="photo5.jpg" alt="Slide 5">
+    </div>
+    <div class="slide">
+      <div class="bg" style="background-image:url('photo6.jpg')"></div>
+      <img src="photo6.jpg" alt="Slide 6">
+    </div>
+  </div>
+
+  <!-- CATEGORY SECTION -->
+  <section class="category-page">
+    <h1>Explore Our Categories</h1>
+
+    <div class="category-row">
+      <div class="category-item">
+        <a href="suit.html">
+          <img src="categoryimages/suit.jpg" alt="Suit">
+        </a>
+        <p class="category-label">Suit</p>
+      </div>
+
+      <div class="category-item">
+        <a href="lehnga.html">
+          <img src="categoryimages/lehnga.jpg" alt="Lehenga">
+        </a>
+        <p class="category-label">Lehenga</p>
+      </div>
+
+      <div class="category-item">
+        <a href="saree.html">
+          <img src="categoryimages/saree.jpg" alt="Saree">
+        </a>
+        <p class="category-label">Saree</p>
+      </div>
+
+      <div class="category-item">
+        <a href="anarkali.html">
+          <img src="categoryimages/anarkali.jpg" alt="Anarkali">
+        </a>
+        <p class="category-label">Anarkali</p>
+      </div>
+
+      <div class="category-item">
+        <a href="gharara.html">
+          <img src="categoryimages/gharara.jpg" alt="Gharara">
+        </a>
+        <p class="category-label">Gharara</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-section about">
+        <h3>Fashion Boutique</h3>
+        <p>Your one-stop destination for elegant ethnic wear. From sarees to anarkalis, we bring tradition to life with style.</p>
+      </div>
+      <div class="footer-section links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="signup.html">Sign Up</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section contact">
+        <h3>Contact</h3>
+        <p>Email: support@fashionboutique.com</p>
+        <p>Phone: +91 9876543210</p>
+        <p>Address: 123 Fashion Street, Mumbai, India</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2025 Fashion Boutique. All rights reserved.
+    </div>
+  </footer>
+
+  <!-- ================= CART SIDEBAR (Home Page) ================= -->
+  <input type="checkbox" id="cart-toggle" hidden>
+
+  <div class="cart-overlay"></div>
+
+  <div class="cart-sidebar">
+    <label for="cart-toggle" class="close-cart">&times;</label>
+    <h2>Your Cart</h2>
+
+    <div class="cart-items">
+      <!-- Red Suit -->
+      <div class="cart-item">
+        <img src="categoryimages/redsuit.jpg" alt="Red Designer Suit">
+        <div class="cart-details">
+          <p>Red Designer Suit</p>
+          <p>₹3000</p>
+          <label for="cart-item1" class="remove-btn">Remove</label>
+        </div>
+      </div>
+
+      <!-- Bridal Lehenga -->
+      <div class="cart-item">
+        <img src="categoryimages/bridallehnga.jpg" alt="Bridal Lehenga">
+        <div class="cart-details">
+          <p>Bridal Lehenga</p>
+          <p>₹50000</p>
+          <label for="cart-item2" class="remove-btn">Remove</label>
+        </div>
+      </div>
+    </div>
+
+    <div class="cart-footer">
+      <h3>Total: ₹53000</h3>
+      <button class="checkout-btn">Checkout</button>
+    </div>
+  </div>
+</body>
+</html>
